@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border ="1">
+        <tr>
+            <td>번호</td>
+            <td>이름</td>
+            <td>소속사</td>
+            <td>수정</td>
+            <td>삭제</td>
+        </tr>
+
+            <% musicians.forEach(function(item, index) { %>
+        <tr>
+            <td><%=item.id%></td>
+            <td><%=item.name%></td>
+            <td><%=item.company%></td>
+            <td>수정</td>
+            <td>삭제</td>
+        </tr>
+            <% }); %>
+    </table>
+</body>
+</html>

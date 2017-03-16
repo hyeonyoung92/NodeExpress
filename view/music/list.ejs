@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border ="1">
+        <tr>
+            <td>번호</td>
+            <td>이름</td>
+            <td>좋아요</td>
+            <td>앨범 명</td>
+            <td>앨범 포스트</td>
+            <td>수정</td>
+            <td>삭제</td>
+        </tr>
+
+            <% music.forEach(function(item, index) { %>
+        <tr>
+            <td><%=item.id%></td>
+            <td><%=item.name%></td>
+            <td><%=item.like_cnt%></td>
+            <td><%=item.album_name%></td>
+            <td><%=item.album_post%></td>
+            <td>수정</td>
+            <td>삭제</td>
+        </tr>
+            <% }); %>
+    </table>
+</body>
+</html>
